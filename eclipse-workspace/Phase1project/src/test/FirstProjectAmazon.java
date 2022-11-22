@@ -34,7 +34,7 @@ public class FirstProjectAmazon {
         //div[@data-component-type='s-search-result']//h2  or   //div[@class='a-section']//span[starts-with(text(),'Samsung ')]
 
         List<WebElement> ProductDesc = driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//h2/a"));
-        System.out.println("Total number of links are " + ProductDesc.size());
+        System.out.println("Total num of links are " + ProductDesc.size());
         List<WebElement> ProductPrice = driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//span[@class='a-price']"));
 
         for(int index=0;index<ProductDesc.size();index++) {
@@ -53,7 +53,7 @@ public class FirstProjectAmazon {
         //Validation of Header String parent and child windows
 
         Set<String> allWinHan = driver.getWindowHandles();
-        System.out.println("Before Clicking Tab button win is " + ParentWin);
+        System.out.println("Before Clicking the Tab button win is " + ParentWin);
 
         //Switching Window Handlers
         for(String win:allWinHan){
